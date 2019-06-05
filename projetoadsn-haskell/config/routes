@@ -4,3 +4,29 @@
 /robots.txt RobotsR GET
 
 / HomeR GET 
+/page1 Page1R GET
+/page2 Page2R GET
+/page3 Page3R GET
+
+/login       LoginR     GET POST
+/logout      LogoutR    POST
+
+/admin       AdminR     GET
+
+/usuario  UsuarioR     GET POST
+
+/titulo  TituloR        GET POST
+/titulos  TodosTitulosR  GET
+
+/titulo/#TituloId/perfil TituloPerfilR GET
+/titulo/#TituloId/apagar TituloApagarR POST
+/titulo/#TituloId/alterar TituloAlteraR GET POST
+
+/jogador  JogadorR        GET POST
+/jogadores TodosJogadoresR  GET
+
+/jogador/#JogadorId/perfil JogadorPerfilR GET
+/jogador/#JogadorId/apagar JogadorApagarR POST
+/jogador/#JogadorId/alterar JogadorAlteraR GET POST
+
+
