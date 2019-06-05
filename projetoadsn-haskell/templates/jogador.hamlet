@@ -1,0 +1,64 @@
+<div style="font: message-box; background-color: black; margin: -10px; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;">
+    <div class="row" style="background-color: black;padding: 2px;">
+        <h1 style="color : white; text-align: center;">
+            <img style="max-width: 200px;" src="https://2.bp.blogspot.com/-doLNF-VcX48/Vzq-MwhaJ8I/AAAAAAAADfs/QQ3NcKSrO6E3FEvd6KTIazYMKfWkmVjPgCLcB/s1600/CORINTHIANSlogo.png"> CADASTRO CORINTHIANS 
+            
+            
+    <nav style="background-color: black; text-align: center; box-shadow: 0px 15px 10px -15px #111;">
+        <ul style="min-width: 696px; list-style: none; padding-top: 20px; padding-bottom: 10px;">
+            <li style="display: inline;">
+                <a style="color:white; text-decoration: none !important;" href=@{JogadorR}>
+                    CADASTRAR JOGADOR ||
+            <li style="display: inline;">
+                <a style="color:white; text-decoration: none !important;" href=@{TodosJogadoresR}>
+                    LISTAR JOGADOR ||
+            <li style="display: inline;">
+                <a style="color:white; text-decoration: none !important;" href=@{TituloR}>
+                    CADASTRAR TITULOS ||
+            <li style="display: inline;">
+                <a style="color:white; text-decoration: none !important;" href=@{TodosTitulosR}>
+                    LISTAR TITULO ||        
+            <li style="display: inline;">
+                <a style="color:white; text-decoration: none !important;" href=@{UsuarioR}>
+                    CADASTRO DE USUARIO 
+            <li style="display: inline;">
+                <form action=@{LogoutR} method=post>
+                    <input type="submit" value="Sair">
+                    
+<div style="text-align: center; font: message-box;">                
+    <h1 style="color : black;">
+        LISTAR JOGADOR
+
+    <div style="font: message-box; margin-left: 22%; font-size: 20px;">
+        <table style="text-align: initial;">
+            <thead>
+                <tr>
+                    <th>
+                        NOME ||
+                    <th>
+                        NUMERO ||
+                    <th>
+                        ANO ||
+                    <th>
+            
+            <tbody>
+                $forall (Entity aluid jogador) <- jogadores
+                    <tr>
+                        <td>
+                            <a style="color: black; text-decoration: none;" href=@{JogadorPerfilR aluid}>
+                                #{jogadorNome jogador}
+                        <td>
+                            <a style="color: black; text-decoration: none;">
+                                #{jogadorNumero jogador}
+                        <td>
+                            <a style="color: black; text-decoration: none;">
+                                #{jogadorAno jogador}
+                        <td>
+                            <a class="btn btn-primary" style="color:white; padding: 8px; background-color: brown; border: 2px solid #ccc; border-radius: 10px; text-decoration: none;" href=@{JogadorAlteraR aluid}>
+                                EDITAR
+                        <td>
+                            <form action=@{JogadorApagarR aluid} method=post>
+                                <input type="submit" value="X">
+                        <td>
+                            
+                            
