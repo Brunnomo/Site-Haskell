@@ -1,0 +1,56 @@
+
+<h1 style="color:red;">
+    CADASTRO JOGADOR
+    
+<nav>
+    <ul id="horizontal-list">
+        <li>
+            <a href=@{JogadorR}>
+                Cadastro de jogador ||
+        <li>
+            <a href=@{TodosJogadoresR}>
+                Listar jogador ||        
+        <li>
+            <a href=@{TituloR}>
+                Cadastro de titulo ||
+        <li>
+            <a href=@{TodosTitulosR}>
+                Listar titulo ||        
+        <li>
+            <a href=@{UsuarioR}>
+                Cadastro de Usuario 
+                
+        <li>
+            <form action=@{LogoutR} method=post>
+                <input type="submit" value="Sair">
+                    
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                NOME
+            <th>
+                Numero
+            <th>
+                Ano
+            <th>
+            
+            <th>
+                
+    <tbody>
+        $forall (Entity aluid jogador) <- jogadores
+            <tr>
+                <td>
+                    <a href=@{JogadorPerfilR aluid}>
+                        #{jogadorNome jogador}
+                <td>
+                    #{jogadorNumero jogador}
+                <td>
+                    #{jogadorAno jogador}
+                <td>
+                    <a href=@{JogadorAlteraR aluid}>
+                        Editar
+                <td>
+                    <form action=@{JogadorApagarR aluid} method=post>
+                        <input type="submit" value="X">

@@ -1,0 +1,13 @@
+Usuario
+    email  Text
+    senha  Text
+    UniqueRestEmail email
+
+Jogador
+    nome    Text
+    numero  Int
+    ano     Int
+    
+Titulo
+    nome    Text
+    ano     Int
