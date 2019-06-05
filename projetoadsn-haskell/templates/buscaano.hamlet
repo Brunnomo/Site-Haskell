@@ -53,4 +53,4 @@
                         Editar
                 <td>
                     <form action=@{JogadorApagarR aluid} method=post>
-                        <input type="submit" value="OK">
+                        <input type="submit" value="X">
